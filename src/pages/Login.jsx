@@ -46,7 +46,7 @@ const Login = () => {
           backdropFilter: 'blur(10px)',
           border: '1px solid rgba(255, 255, 255, 0.4)'
         }}>
-          <Box display="flex" flexDirection="column" alignItems="center" mb={4}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 4 }}>
             <Box sx={{ 
               bgcolor: 'primary.main', 
               color: 'white', 
@@ -119,7 +119,7 @@ const Login = () => {
             </Button>
           </form>
           
-          <Box textAlign="center" mt={2}>
+          <Box sx={{ textAlign: 'center', mt: 2 }}>
             <Typography variant="body2" color="text.secondary">
               Don't have an account? <RouterLink to="/register" style={{ color: '#1976d2', fontWeight: 600, textDecoration: 'none' }}>Sign Up</RouterLink>
             </Typography>

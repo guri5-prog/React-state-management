@@ -43,7 +43,7 @@ const Register = () => {
           backdropFilter: 'blur(10px)',
           border: '1px solid rgba(255, 255, 255, 0.4)'
         }}>
-          <Box display="flex" flexDirection="column" alignItems="center" mb={4}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 4 }}>
             <Box sx={{ 
               bgcolor: 'secondary.main', 
               color: 'white', 
@@ -98,7 +98,7 @@ const Register = () => {
               variant="outlined"
               margin="normal"
               defaultValue="user"
-              inputProps={register('role')}
+              {...register('role')}
               sx={{ '& .MuiOutlinedInput-root': { borderRadius: 2 } }}
             >
               <MenuItem value="user">User</MenuItem>
@@ -129,7 +129,7 @@ const Register = () => {
             </Button>
           </form>
 
-          <Box textAlign="center" mt={2}>
+          <Box sx={{ textAlign: 'center', mt: 2 }}>
             <Typography variant="body2" color="text.secondary">
               Already have an account? <RouterLink to="/login" style={{ color: '#9c27b0', fontWeight: 600, textDecoration: 'none' }}>Log In</RouterLink>
             </Typography>

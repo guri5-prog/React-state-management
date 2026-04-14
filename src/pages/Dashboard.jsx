@@ -26,7 +26,7 @@ const Dashboard = () => {
 
   return (
     <Container maxWidth="md" sx={{ mt: 5 }}>
-      <Box display="flex" alignItems="center" mb={4}>
+      <Box sx={{ display: 'flex', alignItems: 'center', mb: 4 }}>
         <LayoutDashboard size={40} color="#1976d2" style={{ marginRight: '16px' }} />
         <Typography variant="h3" fontWeight="bold" color="text.primary">
           User Dashboard
@@ -41,7 +41,7 @@ const Dashboard = () => {
         {loading ? (
           <CircularProgress size={24} sx={{ mt: 2 }} />
         ) : (
-          <Box mt={3} p={3} bgcolor="rgba(25, 118, 210, 0.05)" borderRadius={2}>
+          <Box sx={{ mt: 3, p: 3, bgcolor: 'rgba(25, 118, 210, 0.05)', borderRadius: 2 }}>
             <Typography variant="body1" fontSize="1.1rem">
               Message from Protected API: <strong>{message}</strong>
             </Typography>

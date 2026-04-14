@@ -12,11 +12,11 @@ import { Box, Typography } from '@mui/material';
 const Home = () => {
   const { user } = useAuth();
   return (
-    <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" height="calc(100vh - 64px)" sx={{ background: 'linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%)' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: 'calc(100vh - 64px)', background: 'linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%)' }}>
       <Typography variant="h2" fontWeight="800" color="primary.main" gutterBottom>
         React SecureApp
       </Typography>
-      <Typography variant="h6" color="text.secondary" align="center" maxWidth="600px">
+      <Typography variant="h6" color="text.secondary" align="center" sx={{ maxWidth: '600px' }}>
         A full-stack authentication system with JWT, Protected Routes, and Role-Based Access Control.
       </Typography>
       {user ? (

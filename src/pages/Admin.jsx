@@ -25,7 +25,7 @@ const Admin = () => {
 
   return (
     <Container maxWidth="lg" sx={{ mt: 5 }}>
-      <Box display="flex" alignItems="center" mb={4}>
+      <Box sx={{ display: 'flex', alignItems: 'center', mb: 4 }}>
         <ShieldAlert size={40} color="#d32f2f" style={{ marginRight: '16px' }} />
         <Typography variant="h3" fontWeight="bold" color="text.primary">
           Admin Dashboard
@@ -40,7 +40,7 @@ const Admin = () => {
         </Typography>
         
         {loading ? (
-          <Box display="flex" justifyContent="center" p={4}>
+          <Box sx={{ display: 'flex', justifyContent: 'center', p: 4 }}>
             <CircularProgress />
           </Box>
         ) : (
